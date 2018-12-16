@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="softwaretestingmaterial" duration-ms="45907" started-at="2018-12-16T18:24:24Z" finished-at="2018-12-16T18:25:10Z">
+    <groups>
+    </groups>
+    <test name="testngTest1" duration-ms="45907" started-at="2018-12-16T18:24:24Z" finished-at="2018-12-16T18:25:10Z">
+      <class name="com.qa.Test.HomePageTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.HomePageTest@5f341870]" name="start" is-config="true" duration-ms="7862" started-at="2018-12-16T18:24:38Z" finished-at="2018-12-16T18:24:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="SearchSomething()[pri:0, instance:com.qa.Test.HomePageTest@5f341870]" name="SearchSomething" duration-ms="10640" started-at="2018-12-16T18:24:46Z" finished-at="2018-12-16T18:24:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchSomething -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.qa.Test.HomePageTest@5f341870]" name="stop" is-config="true" duration-ms="0" started-at="2018-12-16T18:24:57Z" finished-at="2018-12-16T18:24:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+      </class> <!-- com.qa.Test.HomePageTest -->
+      <class name="com.qa.Test.NewLoginPageTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.NewLoginPageTest@14bf9759]" name="start" is-config="true" duration-ms="7588" started-at="2018-12-16T18:24:24Z" finished-at="2018-12-16T18:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="LoginNow()[pri:0, instance:com.qa.Test.NewLoginPageTest@14bf9759]" name="LoginNow" duration-ms="6568" started-at="2018-12-16T18:24:32Z" finished-at="2018-12-16T18:24:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginNow -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.qa.Test.NewLoginPageTest@14bf9759]" name="stop" is-config="true" duration-ms="0" started-at="2018-12-16T18:24:38Z" finished-at="2018-12-16T18:24:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+      </class> <!-- com.qa.Test.NewLoginPageTest -->
+      <class name="com.qa.Test.LoginPageTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.LoginPageTest@3c0ecd4b]" name="start" is-config="true" duration-ms="9077" started-at="2018-12-16T18:24:57Z" finished-at="2018-12-16T18:25:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="PreLogin()[pri:1, instance:com.qa.Test.LoginPageTest@3c0ecd4b]" name="PreLogin" duration-ms="4122" started-at="2018-12-16T18:25:06Z" finished-at="2018-12-16T18:25:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreLogin -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.qa.Test.LoginPageTest@3c0ecd4b]" name="stop" is-config="true" duration-ms="0" started-at="2018-12-16T18:25:10Z" finished-at="2018-12-16T18:25:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+      </class> <!-- com.qa.Test.LoginPageTest -->
+    </test> <!-- testngTest1 -->
+  </suite> <!-- softwaretestingmaterial -->
+</testng-results>

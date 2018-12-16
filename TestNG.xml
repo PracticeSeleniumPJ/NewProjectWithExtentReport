@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="softwaretestingmaterial">
+
+
+<listeners>
+ 
+ <listener class-name="com.qa.ExtentReport_listener.ExtentReportNG"></listener>
+ 
+</listeners>
+ 
+ <test name="testngTest1">
+ 
+ <classes>
+ <class name="com.qa.Test.LoginPageTest" />
+ <class name="com.qa.Test.NewLoginPageTest" />
+ <class name="com.qa.Test.HomePageTest" />
+ </classes>
+ 
+ </test>
+</suite>
