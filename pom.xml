@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <name>testSuite</name>
   </properties>
   
   <profiles>
@@ -38,7 +39,7 @@
                     </executions>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                            <suiteXmlFile>${testSuite}</suiteXmlFile>
                         </suiteXmlFiles>                            
                     </configuration>
                 </plugin>
