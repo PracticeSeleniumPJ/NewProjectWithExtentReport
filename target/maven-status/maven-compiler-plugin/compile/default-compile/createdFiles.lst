@@ -1,0 +1,9 @@
+com\qa\Pages\LoginPage.class
+Analyzer\MyTransformer.class
+Analyzer\RetryAnalyzer.class
+com\qa\Pages\HomePage.class
+com\qa\Pages\NewLoginPage.class
+com\qa\utility\TestUtils.class
+com\qa\Pages\Employee.class
+com\qa\testbase\TestBase.class
+ExtentReportListener\ExtentReporterNG.class

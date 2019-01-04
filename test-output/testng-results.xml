@@ -1,49 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="1" failed="1" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="softwaretestingmaterial" duration-ms="45907" started-at="2018-12-16T18:24:24Z" finished-at="2018-12-16T18:25:10Z">
+  <suite name="softwaretestingmaterial" duration-ms="182704" started-at="2019-01-04T16:59:37Z" finished-at="2019-01-04T17:02:40Z">
     <groups>
     </groups>
-    <test name="testngTest1" duration-ms="45907" started-at="2018-12-16T18:24:24Z" finished-at="2018-12-16T18:25:10Z">
+    <test name="testngTest1" duration-ms="182704" started-at="2019-01-04T16:59:37Z" finished-at="2019-01-04T17:02:40Z">
       <class name="com.qa.Test.HomePageTest">
-        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.HomePageTest@5f341870]" name="start" is-config="true" duration-ms="7862" started-at="2018-12-16T18:24:38Z" finished-at="2018-12-16T18:24:46Z">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.HomePageTest@3701eaf6]" name="start" is-config="true" duration-ms="10160" started-at="2019-01-04T16:59:37Z" finished-at="2019-01-04T16:59:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="SearchSomething()[pri:0, instance:com.qa.Test.HomePageTest@5f341870]" name="SearchSomething" duration-ms="10640" started-at="2018-12-16T18:24:46Z" finished-at="2018-12-16T18:24:57Z">
+        <test-method status="SKIP" signature="SearchSomething()[pri:0, instance:com.qa.Test.HomePageTest@3701eaf6]" name="SearchSomething" duration-ms="67394" started-at="2019-01-04T16:59:48Z" finished-at="2019-01-04T17:00:55Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='subit' and @value='Go']"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-FNHP0R0', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\priya\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 767f4e64e1437547d3591d2a96b57b07
+*** Element info: {Using=xpath, value=//input[@type='subit' and @value='Go']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='subit' and @value='Go']"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-FNHP0R0', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\priya\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 767f4e64e1437547d3591d2a96b57b07
+*** Element info: {Using=xpath, value=//input[@type='subit' and @value='Go']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at com.qa.Pages.HomePage.Search(HomePage.java:24)
+at com.qa.Test.HomePageTest.SearchSomething(HomePageTest.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchSomething -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.qa.Test.HomePageTest@5f341870]" name="stop" is-config="true" duration-ms="0" started-at="2018-12-16T18:24:57Z" finished-at="2018-12-16T18:24:57Z">
+        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:com.qa.Test.HomePageTest@3701eaf6]" name="stop" is-config="true" duration-ms="823" started-at="2019-01-04T17:00:55Z" finished-at="2019-01-04T17:00:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchSomething status=SKIP method=HomePageTest.SearchSomething()[pri:0, instance:com.qa.Test.HomePageTest@3701eaf6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.HomePageTest@3701eaf6]" name="start" is-config="true" duration-ms="7250" started-at="2019-01-04T17:00:56Z" finished-at="2019-01-04T17:01:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="FAIL" signature="SearchSomething()[pri:0, instance:com.qa.Test.HomePageTest@3701eaf6]" name="SearchSomething" duration-ms="70186" started-at="2019-01-04T17:01:03Z" finished-at="2019-01-04T17:02:13Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='subit' and @value='Go']"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-FNHP0R0', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\priya\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 34209c3d6b4855ef1d498b0ddf811f84
+*** Element info: {Using=xpath, value=//input[@type='subit' and @value='Go']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='subit' and @value='Go']"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-FNHP0R0', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\priya\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 34209c3d6b4855ef1d498b0ddf811f84
+*** Element info: {Using=xpath, value=//input[@type='subit' and @value='Go']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at com.qa.Pages.HomePage.Search(HomePage.java:24)
+at com.qa.Test.HomePageTest.SearchSomething(HomePageTest.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchSomething -->
+        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:com.qa.Test.HomePageTest@3701eaf6]" name="stop" is-config="true" duration-ms="796" started-at="2019-01-04T17:02:14Z" finished-at="2019-01-04T17:02:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchSomething status=FAILURE method=HomePageTest.SearchSomething()[pri:0, instance:com.qa.Test.HomePageTest@3701eaf6] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
       </class> <!-- com.qa.Test.HomePageTest -->
       <class name="com.qa.Test.NewLoginPageTest">
-        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.NewLoginPageTest@14bf9759]" name="start" is-config="true" duration-ms="7588" started-at="2018-12-16T18:24:24Z" finished-at="2018-12-16T18:24:32Z">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.NewLoginPageTest@2b552920]" name="start" is-config="true" duration-ms="6391" started-at="2019-01-04T17:02:15Z" finished-at="2019-01-04T17:02:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="LoginNow()[pri:0, instance:com.qa.Test.NewLoginPageTest@14bf9759]" name="LoginNow" duration-ms="6568" started-at="2018-12-16T18:24:32Z" finished-at="2018-12-16T18:24:38Z">
+        <test-method status="PASS" signature="LoginNow()[pri:0, instance:com.qa.Test.NewLoginPageTest@2b552920]" name="LoginNow" duration-ms="7960" started-at="2019-01-04T17:02:21Z" finished-at="2019-01-04T17:02:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginNow -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.qa.Test.NewLoginPageTest@14bf9759]" name="stop" is-config="true" duration-ms="0" started-at="2018-12-16T18:24:38Z" finished-at="2018-12-16T18:24:38Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.qa.Test.NewLoginPageTest@2b552920]" name="stop" is-config="true" duration-ms="829" started-at="2019-01-04T17:02:29Z" finished-at="2019-01-04T17:02:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
       </class> <!-- com.qa.Test.NewLoginPageTest -->
       <class name="com.qa.Test.LoginPageTest">
-        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.LoginPageTest@3c0ecd4b]" name="start" is-config="true" duration-ms="9077" started-at="2018-12-16T18:24:57Z" finished-at="2018-12-16T18:25:06Z">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.Test.LoginPageTest@627551fb]" name="start" is-config="true" duration-ms="6299" started-at="2019-01-04T17:02:30Z" finished-at="2019-01-04T17:02:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="PreLogin()[pri:1, instance:com.qa.Test.LoginPageTest@3c0ecd4b]" name="PreLogin" duration-ms="4122" started-at="2018-12-16T18:25:06Z" finished-at="2018-12-16T18:25:10Z">
+        <test-method status="PASS" signature="PreLogin()[pri:1, instance:com.qa.Test.LoginPageTest@627551fb]" name="PreLogin" duration-ms="3113" started-at="2019-01-04T17:02:36Z" finished-at="2019-01-04T17:02:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PreLogin -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.qa.Test.LoginPageTest@3c0ecd4b]" name="stop" is-config="true" duration-ms="0" started-at="2018-12-16T18:25:10Z" finished-at="2018-12-16T18:25:10Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.qa.Test.LoginPageTest@627551fb]" name="stop" is-config="true" duration-ms="745" started-at="2019-01-04T17:02:39Z" finished-at="2019-01-04T17:02:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.testbase.TestBase;
+import com.qa.utility.TestUtils;
 
 public class NewLoginPage extends TestBase {
 
@@ -33,6 +34,7 @@ public class NewLoginPage extends TestBase {
 		Username.sendKeys("priya.invincible@gmail.com");
 		Password.sendKeys("Iamshopping@1234");
 		Submit.click();
+	//	TestUtils.captureScreenshot(driver, "NewLoginPage");
 		return new HomePage();
 	}
 	

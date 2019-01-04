@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.testbase.TestBase;
+import com.qa.utility.TestUtils;
 
 public class LoginPage extends TestBase {
 	
@@ -31,9 +32,11 @@ public class LoginPage extends TestBase {
 	public NewLoginPage clickLogin() throws FileNotFoundException {
 		
 		continuebtn.click();
-		//Actions act = new Actions(driver);
-		//act.click(LoginLink);
+	//	TestUtils.captureScreenshot(driver, "clickcontinuebtn");
+		
+		
 		LoginLink.click();
+		//TestUtils.captureScreenshot(driver, "clickLoginbtn");
 		
 		return new NewLoginPage();
 	}

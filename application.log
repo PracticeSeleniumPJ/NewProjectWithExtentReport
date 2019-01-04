@@ -1,0 +1,67 @@
+2018-12-31 00:09:27,663  INFO [main] TestBase:40 - entering application URL
+2018-12-31 00:09:27,673  WARN [main] TestBase:41 - Hey this just a warning message
+2018-12-31 00:09:27,673 FATAL [main] TestBase:42 - hey this is just fatal error message
+2018-12-31 00:09:27,673 DEBUG [main] TestBase:43 - this is debug message
+2018-12-31 00:09:27,695  INFO [main] TestBase:51 - Hi this is test method search something
+2018-12-31 00:11:04,539  INFO [main] TestBase:40 - entering application URL
+2018-12-31 00:11:04,540  WARN [main] TestBase:41 - Hey this just a warning message
+2018-12-31 00:11:04,540 FATAL [main] TestBase:42 - hey this is just fatal error message
+2018-12-31 00:11:04,542 DEBUG [main] TestBase:43 - this is debug message
+2018-12-31 00:11:04,546  INFO [main] TestBase:51 - Hi this is test method search something
+2018-12-31 00:11:34,766  INFO [main] TestBase:37 - this is loginnow page
+2018-12-31 00:12:04,960  INFO [main] TestBase:37 - this is loginnow page
+2018-12-31 00:12:14,207  INFO [main] TestBase:40 - this is pre login test
+2018-12-31 00:12:18,102 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2018-12-31 00:12:18,104 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2018-12-31 00:12:18,115 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-12-31 00:12:18,118 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-12-31 00:12:18,119 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-12-31 00:12:18,428 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2018-12-31 00:12:18,428 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2018-12-31 00:12:18,429 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-12-31 00:12:18,429 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-12-31 00:12:18,429 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-12-31 00:13:16,126  INFO [main] TestBase:40 - entering application URL
+2018-12-31 00:13:16,134  WARN [main] TestBase:41 - Hey this just a warning message
+2018-12-31 00:13:16,134 FATAL [main] TestBase:42 - hey this is just fatal error message
+2018-12-31 00:13:16,134 DEBUG [main] TestBase:43 - this is debug message
+2018-12-31 00:13:16,134  INFO [main] TestBase:51 - Hi this is test method search something
+2018-12-31 00:13:24,155  INFO [main] TestBase:40 - entering application URL
+2018-12-31 00:13:24,159  WARN [main] TestBase:41 - Hey this just a warning message
+2018-12-31 00:13:24,159 FATAL [main] TestBase:42 - hey this is just fatal error message
+2018-12-31 00:13:24,159 DEBUG [main] TestBase:43 - this is debug message
+2018-12-31 00:13:24,159  INFO [main] TestBase:51 - Hi this is test method search something
+2018-12-31 00:14:40,902  INFO [main] TestBase:37 - this is loginnow page
+2018-12-31 00:14:56,263  INFO [main] TestBase:40 - this is pre login test
+2018-12-31 00:15:00,295 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2018-12-31 00:15:00,296 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2018-12-31 00:15:00,299 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-12-31 00:15:00,303 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-12-31 00:15:00,307 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-12-31 00:15:00,754 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2018-12-31 00:15:00,755 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2018-12-31 00:15:00,756 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-12-31 00:15:00,757 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-12-31 00:15:00,757 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 22:29:47,953  INFO [main] TestBase:40 - entering application URL
+2019-01-04 22:29:48,013  WARN [main] TestBase:41 - Hey this just a warning message
+2019-01-04 22:29:48,013 FATAL [main] TestBase:42 - hey this is just fatal error message
+2019-01-04 22:29:48,015 DEBUG [main] TestBase:43 - this is debug message
+2019-01-04 22:29:48,019  INFO [main] TestBase:51 - Hi this is test method search something
+2019-01-04 22:31:03,496  INFO [main] TestBase:40 - entering application URL
+2019-01-04 22:31:03,497  WARN [main] TestBase:41 - Hey this just a warning message
+2019-01-04 22:31:03,497 FATAL [main] TestBase:42 - hey this is just fatal error message
+2019-01-04 22:31:03,497 DEBUG [main] TestBase:43 - this is debug message
+2019-01-04 22:31:03,503  INFO [main] TestBase:51 - Hi this is test method search something
+2019-01-04 22:32:21,571  INFO [main] TestBase:37 - this is loginnow page
+2019-01-04 22:32:36,662  INFO [main] TestBase:40 - this is pre login test
+2019-01-04 22:32:41,301 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-01-04 22:32:41,301 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-01-04 22:32:41,307 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 22:32:41,308 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 22:32:41,311 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 22:32:41,746 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-01-04 22:32:41,751 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-01-04 22:32:41,752 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 22:32:41,752 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 22:32:41,752 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

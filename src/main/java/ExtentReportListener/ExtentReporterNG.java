@@ -1,4 +1,5 @@
-package com.qa.ExtentReport_listener;
+package ExtentReportListener;
+
 import java.io.File;
 import java.util.Calendar;
 import java.util.Date;
@@ -16,11 +17,9 @@ import org.testng.xml.XmlSuite;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-public class ExtentReportNG implements IReporter{
 
-
-
-private ExtentReports extent;
+public class ExtentReporterNG implements IReporter {
+	private ExtentReports extent;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
 			String outputDirectory) {
@@ -73,7 +72,4 @@ private ExtentReports extent;
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
-
-
-
 }

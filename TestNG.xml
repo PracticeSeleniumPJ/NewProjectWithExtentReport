@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="softwaretestingmaterial">
 
 
 <listeners>
  
- <listener class-name="com.qa.ExtentReport_listener.ExtentReportNG"></listener>
- 
+<listener class-name="ExtentReportListener.ExtentReporterNG"></listener>
+  <listener class-name="Analyzer.MyTransformer"></listener>
 </listeners>
  
  <test name="testngTest1">
  
  <classes>
+ <class name="com.qa.Test.HomePageTest" />
  <class name="com.qa.Test.LoginPageTest" />
  <class name="com.qa.Test.NewLoginPageTest" />
- <class name="com.qa.Test.HomePageTest" />
  </classes>
  
  </test>

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-softwaretestingmaterial">
-              <span class="suite-name border-passed">softwaretestingmaterial</span>
+              <span class="suite-name border-failed">softwaretestingmaterial</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-softwaretestingmaterial" class="hide-methods failed suite-softwaretestingmaterial"> (hide)</a> <!-- hide-methods failed suite-softwaretestingmaterial -->
+                      <a href="#" panel-name="suite-softwaretestingmaterial" class="show-methods failed suite-softwaretestingmaterial"> (show)</a> <!-- show-methods failed suite-softwaretestingmaterial -->
+                    </span>
+                    <div class="method-list-content failed suite-softwaretestingmaterial">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-softwaretestingmaterial" title="com.qa.Test.HomePageTest" hash-for-method="SearchSomething">SearchSomething</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-softwaretestingmaterial -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-softwaretestingmaterial" class="hide-methods skipped suite-softwaretestingmaterial"> (hide)</a> <!-- hide-methods skipped suite-softwaretestingmaterial -->
+                      <a href="#" panel-name="suite-softwaretestingmaterial" class="show-methods skipped suite-softwaretestingmaterial"> (show)</a> <!-- show-methods skipped suite-softwaretestingmaterial -->
+                    </span>
+                    <div class="method-list-content skipped suite-softwaretestingmaterial">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-softwaretestingmaterial" title="com.qa.Test.HomePageTest" hash-for-method="SearchSomething">SearchSomething</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-softwaretestingmaterial -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,11 +138,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-softwaretestingmaterial" title="com.qa.Test.LoginPageTest" hash-for-method="PreLogin">PreLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-softwaretestingmaterial" title="com.qa.Test.HomePageTest" hash-for-method="SearchSomething">SearchSomething</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-softwaretestingmaterial -->
                   </li>
                 </ul>
@@ -127,24 +150,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-softwaretestingmaterial" class="panel softwaretestingmaterial">
-          <div class="suite-softwaretestingmaterial-class-passed">
+          <div class="suite-softwaretestingmaterial-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.Test.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="PreLogin">
-                  </a> <!-- PreLogin -->
-                  <span class="method-name">PreLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-softwaretestingmaterial-class-passed -->
-          <div class="suite-softwaretestingmaterial-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.Test.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -153,10 +161,85 @@
                   <a name="SearchSomething">
                   </a> <!-- SearchSomething -->
                   <span class="method-name">SearchSomething</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;subit&apos; and @value=&apos;Go&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-FNHP0R0&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\priya\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 34209c3d6b4855ef1d498b0ddf811f84
+*** Element info: {Using=xpath, value=//input[@type=&apos;subit&apos; and @value=&apos;Go&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.qa.Pages.HomePage.Search(HomePage.java:24)
+	at com.qa.Test.HomePageTest.SearchSomething(HomePageTest.java:54)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-softwaretestingmaterial-class-passed -->
+          </div> <!-- suite-softwaretestingmaterial-class-failed -->
+          <div class="suite-softwaretestingmaterial-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qa.Test.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchSomething">
+                  </a> <!-- SearchSomething -->
+                  <span class="method-name">SearchSomething</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;subit&apos; and @value=&apos;Go&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-FNHP0R0&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\priya\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 767f4e64e1437547d3591d2a96b57b07
+*** Element info: {Using=xpath, value=//input[@type=&apos;subit&apos; and @value=&apos;Go&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.qa.Pages.HomePage.Search(HomePage.java:24)
+	at com.qa.Test.HomePageTest.SearchSomething(HomePageTest.java:54)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-softwaretestingmaterial-class-skipped -->
           <div class="suite-softwaretestingmaterial-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -172,6 +255,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-softwaretestingmaterial-class-passed -->
+          <div class="suite-softwaretestingmaterial-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.Test.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PreLogin">
+                  </a> <!-- PreLogin -->
+                  <span class="method-name">PreLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-softwaretestingmaterial-class-passed -->
         </div> <!-- panel softwaretestingmaterial -->
         <div panel-name="test-xml-softwaretestingmaterial" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -181,15 +279,16 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;softwaretestingmaterial&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;softwaretestingmaterial&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.qa.ExtentReport_listener.ExtentReportNG&quot;/&gt;
+    &lt;listener class-name=&quot;ExtentReportListener.ExtentReporterNG&quot;/&gt;
+    &lt;listener class-name=&quot;Analyzer.MyTransformer&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;testngTest1&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.qa.Test.HomePageTest&quot;/&gt;
       &lt;class name=&quot;com.qa.Test.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;com.qa.Test.NewLoginPageTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.Test.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- testngTest1 --&gt;
 &lt;/suite&gt; &lt;!-- softwaretestingmaterial --&gt;
@@ -229,24 +328,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'SearchSomething')
 data.setCell(0, 2, 'com.qa.Test.HomePageTest')
-data.setCell(0, 3, 10640);
+data.setCell(0, 3, 70186);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginNow')
-data.setCell(1, 2, 'com.qa.Test.NewLoginPageTest')
-data.setCell(1, 3, 6568);
+data.setCell(1, 1, 'SearchSomething')
+data.setCell(1, 2, 'com.qa.Test.HomePageTest')
+data.setCell(1, 3, 67394);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'PreLogin')
-data.setCell(2, 2, 'com.qa.Test.LoginPageTest')
-data.setCell(2, 3, 4122);
+data.setCell(2, 1, 'LoginNow')
+data.setCell(2, 2, 'com.qa.Test.NewLoginPageTest')
+data.setCell(2, 3, 7960);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'PreLogin')
+data.setCell(3, 2, 'com.qa.Test.LoginPageTest')
+data.setCell(3, 3, 3113);
 window.suiteTableData['softwaretestingmaterial']= { tableData: data, tableDiv: 'times-div-softwaretestingmaterial'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-softwaretestingmaterial">
               </div> <!-- times-div-softwaretestingmaterial -->
             </div> <!-- times-div -->
@@ -272,48 +375,62 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.Test.NewLoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.Test.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">start</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">LoginNow</span>
-                <span class="method-start">7588 ms</span>
+                <span class="method-name">SearchSomething</span>
+                <span class="method-start">10160 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">stop</span>
-                <span class="method-start">14157 ms</span>
+                <span class="method-name">stop([TestResult name=SearchSomething status=SKIP method=HomePageTest.SearchSomething()[pri:0, instance:c...)</span>
+                <span class="method-start">77573 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">start</span>
+                <span class="method-start">78396 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchSomething</span>
+                <span class="method-start">85646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stop([TestResult name=SearchSomething status=FAILURE method=HomePageTest.SearchSomething()[pri:0, instanc...)</span>
+                <span class="method-start">156528 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.Test.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.Test.NewLoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">start</span>
-                <span class="method-start">14159 ms</span>
+                <span class="method-start">157325 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">SearchSomething</span>
-                <span class="method-start">22021 ms</span>
+                <span class="method-name">LoginNow</span>
+                <span class="method-start">163716 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stop</span>
-                <span class="method-start">32666 ms</span>
+                <span class="method-start">171677 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.Test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">start</span>
-                <span class="method-start">32667 ms</span>
+                <span class="method-start">172507 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">PreLogin</span>
-                <span class="method-start">41744 ms</span>
+                <span class="method-start">178806 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stop</span>
-                <span class="method-start">45867 ms</span>
+                <span class="method-start">181921 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

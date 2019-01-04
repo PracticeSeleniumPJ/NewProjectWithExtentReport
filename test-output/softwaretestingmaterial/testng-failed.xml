@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [softwaretestingmaterial]">
-  <test thread-count="5" name="testngTest2(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [softwaretestingmaterial]">
+  <listeners>
+    <listener class-name="ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="Analyzer.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="testngTest1(failed)">
     <classes>
-      <class name="com.qa.Test.NewLoginPageTest">
+      <class name="com.qa.Test.HomePageTest">
         <methods>
-          <include name="LoginNow"/>
-          <include name="start"/>
+          <include name="SearchSomething"/>
           <include name="stop"/>
+          <include name="start"/>
         </methods>
-      </class> <!-- com.qa.Test.NewLoginPageTest -->
+      </class> <!-- com.qa.Test.HomePageTest -->
     </classes>
-  </test> <!-- testngTest2(failed) -->
+  </test> <!-- testngTest1(failed) -->
 </suite> <!-- Failed suite [softwaretestingmaterial] -->
